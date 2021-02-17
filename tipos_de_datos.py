@@ -5,12 +5,12 @@ data = ('  GARCIA,gonzalez,        rodriguez  ,FERNANDEZ ,LOPEZ,martinez ,  sanc
 """Dividir el string contenido en la variable `data` en donde se encuentre el 
 primer caracter `\n` y guardar el resultado en una variable llamada `var1`.
 """
-
+var1 = data.split('\n',1)
+print(len(var1))
 
 """Guardar el primer elemento de la variable `var1` en una variable llamada 
 `apellidos` y el segundo elemento en una llamada `decimales`.
 """
-
 
 """Dividir el string contenido en la variable `apellidos` en donde se encuentre el 
 el caracter `,` y guardar el resultado en una variable llamada `apellidos_list`.
@@ -50,7 +50,8 @@ solo letras mayúsculas.
 """Convertir la variable `apellido2` de mayúsculas a minúsculas si está en mayúsculas, 
 o de minúsculas a mayúsculas si está en minúsculas y guardarla en `apellido3`.
 """
-
+apellido3_apellido2.upper()
+print(apellido3)
 
 """Crear variable `a_in_apellido` que contenga la cantidad de letras a que contiene 
 la variable `apellido2`.
