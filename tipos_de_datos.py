@@ -11,40 +11,44 @@ print(len(var1))
 """Guardar el primer elemento de la variable `var1` en una variable llamada 
 `apellidos` y el segundo elemento en una llamada `decimales`.
 """
+apellidos=var1[0]
+decimales=var1[1]
 
 """Dividir el string contenido en la variable `apellidos` en donde se encuentre el 
 el caracter `,` y guardar el resultado en una variable llamada `apellidos_list`.
 """
-
+apellidos_list=apellidos.split(',')
 
 """Dividir el string contenido en la variable `decimales` en donde se encuentre el 
 el caracter `;` y guardar el resultado en una variable llamada `decimales_list`.
 """
-
+decimales_list=decimales.split(';')
 
 """Obtener el elemento en la posición 38 de `decimales_list`, procesarlo para 
 convertirlo en un entero y guardarlo en variable `var2`.
 """
-
+var2=int(float(decimales_list[38]))
 
 """Obtener el valor en la posición que indique dicho entero (`var2`) de la lista 
 `apellidos_list`. Guardar el resultado en variable `apellido`.
 """
-
+apellidos_list.index(var2)
 
 """obtener la longitud (cantidad de caracteres) de la variable `apellido` y 
 guardar el resultado en `len_apellido`.
 """
-
+len_apellido = len(apellido)
 
 """Remover los espacios en blanco que hayan en la variable `apellido` y guardar 
 resultado en `apellido2`.
 """
-
+apellido2=str(apellido).strip()
 
 """Guardar en `apellido_es_mayuscula` si `apellido2` es un string que contiene 
 solo letras mayúsculas.
 """
+
+apellido_es_mayuscula = upper(apellido2)
 
 
 """Convertir la variable `apellido2` de mayúsculas a minúsculas si está en mayúsculas, 
@@ -52,6 +56,8 @@ o de minúsculas a mayúsculas si está en minúsculas y guardarla en `apellido3
 """
 apellido3_apellido2.upper()
 print(apellido3)
+apellido3 = apellido2.capitalice()
+
 
 """Crear variable `a_in_apellido` que contenga la cantidad de letras a que contiene 
 la variable `apellido2`.
