@@ -62,7 +62,7 @@ apellido3 = apellido2.capitalice()
 """Crear variable `a_in_apellido` que contenga la cantidad de letras a que contiene 
 la variable `apellido2`.
 """
-
+a_in_apellido = apellido2
 
 """Crear variable `apellido_end_ez` que contenga si la variable `apellido2` 
 termina con el string `"ez"`.
