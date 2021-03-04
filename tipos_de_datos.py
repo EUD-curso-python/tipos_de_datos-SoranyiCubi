@@ -20,7 +20,7 @@ print(decimales)
 """Dividir el string contenido en la variable `apellidos` en donde se encuentre el 
 el caracter `,` y guardar el resultado en una variable llamada `apellidos_list`.
 """
-apellidos_list=apellidos.split(',')
+apellidos_list = apellidos.split(',')
 print(apellidos_list)
 
 """Dividir el string contenido en la variable `decimales` en donde se encuentre el 
@@ -44,13 +44,13 @@ print(apellidos_list)
 """obtener la longitud (cantidad de caracteres) de la variable `apellido` y 
 guardar el resultado en `len_apellido`.
 """
-len_apellido = len(apellido)
+len_apellido = len(apellidos)
 print(len_apellido)
 
 """Remover los espacios en blanco que hayan en la variable `apellido` y guardar 
 resultado en `apellido2`.
 """
-apellido2 = str(apellido).strip()
+apellido2 = str(apellidos).strip()
 print(apellido2)
 
 """Guardar en `apellido_es_mayuscula` si `apellido2` es un string que contiene 
@@ -79,7 +79,10 @@ termina con el string `"ez"`.
 al 23 (en orden invertido), saltandose de a 1 elemento (49, 47, 45 , etc) de la
 lista `apellidos_list`.
 """
-
+apellidos_tuple = apellidos_list[23:50:2]
+apellidos_tuple.reverse()
+apellidos_tuple = tuple(apellidos_tuple)
+print(apellidos_tuple)
 
 """Crear variable `apellidos_list2` que contenga una copia de `apellidos_tuple` 
 (con las conversiones que sean necesarias) y agregarle el elemento de la 
@@ -152,7 +155,8 @@ es un subconjunto de `apellidos_set1`.
 """Crear la variable `apellidos_dict` usando la función `fromkeys` con la lista
 del 0 al 4 de la lista `apellidos_lista`.
 """
-
+apellidos_dict = dict.fromkeys(apellidos_list[0:3])
+print(apellidos_dict) 
 
 """Agregar el siguiente diccionario: {"key1": 12, "key2": 24} al diccionario  
 `apellidos_dict`.
@@ -164,17 +168,18 @@ print(apellidos_dict)
 `apellidos_dict`.
 """
 apellidos_dict.update({"gonzalez":34})
-print(apellidos_dict)
-        
+print(apellidos_dict)      
 
 """Sacar el valor de la llave "gonzalez" del diccionario `apellidos_dict` y 
 guardarlo en la variable `apellido_gonzalez`.
 """
-
+apellido_gonzalez = apellidos_dict.pop('gonzalez')
+print(apellido_gonzalez)
 
 """Eliminar el último elemento del diccionario `apellidos_dict`.
 """
-
+apellidos_dict.popitem()
+print(apellidos_dict)
 
 """Sacar el valor de la llave "no_existe" del diccionario `apellidos_dict` y 
 guardarlo en la variable `apellido_none`.
