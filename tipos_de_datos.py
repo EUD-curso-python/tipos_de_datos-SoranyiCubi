@@ -114,21 +114,26 @@ elemento 56 al 70 de la variable `apellidos_list`.
 variable `apellidos_list`, y crear variable `apellidos_set2` con elementos del 
 62 al 76 de la variable `apellidos_list`.
 """
-
+apellidos_set1 = set(apellidos_list[56:67])
+apellidos_set1 = set(apellidos_list[62:77])
+print(apellidos_set1)
 
 """Agregar a variable `apellidos_set1` el elemento en la pocisión 67 de la 
 variable `apellidos_list`.
 """
-
+apellidos_set1.add(apellidos_list[68])
+print(apellidos_set1)
 
 """Agregar a variable `apellidos_set1` los elementos del 68 al 70 de la 
 variable `apellidos_list`.
 """
-
+apellidos_set1.update(apellidos_list[68:71])
+print(apellidos_list[68:71])
+print(apellidos_set1)
 
 """Eliminar el elemento " CAMPOS  " de la variable `apellidos_set1`.
 """
-
+apellidos_set1.remove(' campos  ')
 
 """Crear la variable `apellidos_set3` con la intersección entre `apellidos_set1` 
 y `apellidos_set2`.
