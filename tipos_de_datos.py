@@ -26,7 +26,7 @@ print(apellidos_list)
 """Dividir el string contenido en la variable `decimales` en donde se encuentre el 
 el caracter `;` y guardar el resultado en una variable llamada `decimales_list`.
 """
-decimales_list=decimales.split(';')
+decimales_list = decimales.split(';')
 print(decimales_list)
 
 """Obtener el elemento en la posición 38 de `decimales_list`, procesarlo para 
@@ -88,7 +88,10 @@ print(apellidos_tuple)
 (con las conversiones que sean necesarias) y agregarle el elemento de la 
 posición 78 de la lista `apellidos_list`.
 """
-
+copia = list(apellidos_tuple)
+copia.append(apellidos_list[78])
+apellidos_list2=tuple(copia)
+print(apellidos_list2)
 
 """Eliminar el 4 elemento de la variable `apellidos_list2`.
 """
