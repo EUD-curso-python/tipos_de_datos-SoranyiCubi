@@ -62,7 +62,7 @@ print(apellido_es_mayuscula)
 """Convertir la variable `apellido2` de mayúsculas a minúsculas si está en mayúsculas, 
 o de minúsculas a mayúsculas si está en minúsculas y guardarla en `apellido3`.
 """
-apellido3_apellido2.upper()
+apellido3 = apellido2.upper()
 print(apellido3)
 
 """Crear variable `a_in_apellido` que contenga la cantidad de letras a que contiene 
@@ -157,12 +157,15 @@ del 0 al 4 de la lista `apellidos_lista`.
 """Agregar el siguiente diccionario: {"key1": 12, "key2": 24} al diccionario  
 `apellidos_dict`.
 """
-
+apellidos_dict.update({"key1": 12, "key2": 24})
+print(apellidos_dict)
 
 """Asignar el valor del entero `34` a la llave "gonzalez" en el diccionario 
 `apellidos_dict`.
 """
-
+apellidos_dict.update({"gonzalez":34})
+print(apellidos_dict)
+        
 
 """Sacar el valor de la llave "gonzalez" del diccionario `apellidos_dict` y 
 guardarlo en la variable `apellido_gonzalez`.
