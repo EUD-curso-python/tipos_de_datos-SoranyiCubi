@@ -165,6 +165,7 @@ print(apellido_gonzalez)
 """
 apellidos_dict.popitem()
 print(apellidos_dict)
+
 """Sacar el valor de la llave "no_existe" del diccionario `apellidos_dict` y 
 guardarlo en la variable `apellido_none`.
 """
