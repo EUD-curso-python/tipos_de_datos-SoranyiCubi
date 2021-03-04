@@ -68,12 +68,14 @@ print(apellido3)
 """Crear variable `a_in_apellido` que contenga la cantidad de letras a que contiene 
 la variable `apellido2`.
 """
-
+a_in_apellido = apellido2.count('a')
+print(a_in_apellido)
 
 """Crear variable `apellido_end_ez` que contenga si la variable `apellido2` 
 termina con el string `"ez"`.
 """
-
+apellido_end_ez = apellido2.endswith('ez')
+print(apellido_end_ez)
 
 """Crear tupla llamada `apellidos_tuple` que contenga los elementos desde el 49 
 al 23 (en orden invertido), saltandose de a 1 elemento (49, 47, 45 , etc) de la
@@ -95,7 +97,8 @@ print(apellidos_list2)
 
 """Eliminar el 4 elemento de la variable `apellidos_list2`.
 """
-
+apellidos_list2.pop(3)
+print(apellidos_list2)
 
 """Eliminar el elemento igual a "  MORALES" de la variable `apellidos_list2`.
 """
@@ -121,7 +124,7 @@ print(apellidos_set1)
 """Agregar a variable `apellidos_set1` el elemento en la pocisión 67 de la 
 variable `apellidos_list`.
 """
-apellidos_set1.add(apellidos_list[68])
+apellidos_set1.add(apellidos_list[67])
 print(apellidos_set1)
 
 """Agregar a variable `apellidos_set1` los elementos del 68 al 70 de la 
