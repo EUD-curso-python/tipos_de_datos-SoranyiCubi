@@ -27,16 +27,19 @@ print(apellidos_list)
 el caracter `;` y guardar el resultado en una variable llamada `decimales_list`.
 """
 decimales_list=decimales.split(';')
+print(decimales_list)
 
 """Obtener el elemento en la posición 38 de `decimales_list`, procesarlo para 
 convertirlo en un entero y guardarlo en variable `var2`.
 """
 var2=int(float(decimales_list[38]))
+print(var2)
 
 """Obtener el valor en la posición que indique dicho entero (`var2`) de la lista 
 `apellidos_list`. Guardar el resultado en variable `apellido`.
 """
 apellidos_list.index(var2)
+print(apellido)
 
 """obtener la longitud (cantidad de caracteres) de la variable `apellido` y 
 guardar el resultado en `len_apellido`.
