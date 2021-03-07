@@ -32,18 +32,21 @@ print(var2)
 """Obtener el valor en la posición que indique dicho entero (`var2`) de la lista 
 `apellidos_list`. Guardar el resultado en variable `apellido`.
 """
-apellidos_list.index(var2)
-print(apellidos_list)
+apellido = apellidos_list[var2]
+print(apellido)
+
 """obtener la longitud (cantidad de caracteres) de la variable `apellido` y 
 guardar el resultado en `len_apellido`.
 """
 len_apellido = len(apellidos)
 print(len_apellido)
+
 """Remover los espacios en blanco que hayan en la variable `apellido` y guardar 
 resultado en `apellido2`.
 """
 apellido2 = str(apellidos).strip()
 print(apellido2)
+
 """Guardar en `apellido_es_mayuscula` si `apellido2` es un string que contiene 
 solo letras mayúsculas.
 """
@@ -117,7 +120,7 @@ print(apellidos_list[68:71])
 print(apellidos_set1)
 """Eliminar el elemento " CAMPOS  " de la variable `apellidos_set1`.
 """
-apellidos_set1.remove(' campos  ')
+apellidos_set1.remove(' CAMPOS  ')
 """Crear la variable `apellidos_set3` con la intersección entre `apellidos_set1` 
 y `apellidos_set2`.
 """
@@ -165,7 +168,6 @@ print(apellido_gonzalez)
 """
 apellidos_dict.popitem()
 print(apellidos_dict)
-
 """Sacar el valor de la llave "no_existe" del diccionario `apellidos_dict` y 
 guardarlo en la variable `apellido_none`.
 """
